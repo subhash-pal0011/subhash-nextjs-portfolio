@@ -14,8 +14,10 @@ import { FiAward } from "react-icons/fi";
 import Link from "next/link";
 import { useForm } from "react-hook-form"
 import axios from "axios";
+import { useRouter } from "next/navigation";
 
 const HomeSection = () => {
+  const router = useRouter()
   const [chatBox, setChatBox] = useState(false)
   const [chat, setChat] = useState([])
   const [lodingResponce, setLodingResponce] = useState(false)
@@ -63,7 +65,7 @@ const HomeSection = () => {
     register,
     handleSubmit,
     reset,
-    formState: {isSubmitting },
+    formState: { isSubmitting },
   } = useForm()
 
   const onSubmit = async (data) => {
@@ -200,7 +202,10 @@ const HomeSection = () => {
               initial={{ x: 40, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.7 }}
-              onClick={() => setButton("about")}
+              onClick={() => {
+                setButton("about");
+                router.push("/about");
+              }}
               className={`hover:text-white cursor-pointer ${button === "about" ? "text-white underline" : "text-gray-400"}`}>About
             </motion.span>
 
@@ -208,7 +213,7 @@ const HomeSection = () => {
               initial={{ x: 40, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.8 }}
-              onClick={() => setButton("project")}
+              onClick={() => { setButton("project"); router.push("/project")}}
               className={`hover:text-white cursor-pointer ${button === "project" ? "text-white underline" : "text-gray-400"}`}>Projects
             </motion.span>
 
@@ -217,7 +222,7 @@ const HomeSection = () => {
               initial={{ x: 40, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.9 }}
-              onClick={() => setButton("skills")}
+              onClick={() =>{ setButton("skills"); router.push("/skills")}}
               className={`hover:text-white cursor-pointer ${button === "skills" ? "text-white underline" : "text-gray-400"}`}>Skills
             </motion.span>
 
@@ -226,7 +231,7 @@ const HomeSection = () => {
               initial={{ x: 40, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 1 }}
-              onClick={() => setButton("conect")}
+              onClick={() =>{ setButton("conect"); router.push("/contect")}}
               className={`hover:text-white cursor-pointer ${button === "conect" ? "text-white underline" : "text-gray-400"}`}>Contact
             </motion.span>
           </div>
@@ -497,7 +502,7 @@ const HomeSection = () => {
           onClick={() => setChatBox(true)}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          className="fixed bottom-6 right-6 z-50 border border-white/10 rounded-full w-20 bg-white/5 backdrop-blur-md cursor-pointer shadow-lg shadow-cyan-500/10"
+          className="fixed bottom-6 right-6 z-50 border border-white/10 rounded-full w-20 h-20 bg-white/5 backdrop-blur-md cursor-pointer shadow-lg shadow-cyan-500/10"
         >
           <div className="flex flex-col items-center justify-center p-2 rounded-full">
             <img src="/roboAi.gif" className="h-10 w-10" />
