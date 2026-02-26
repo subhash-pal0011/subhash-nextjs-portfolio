@@ -1,9 +1,9 @@
-import MainPage from "@/comonent/MainPage";
+import HomeSection from "@/comonent/HomeSection";
 
 export default function Home() {
   return (
-    <>
-    <MainPage />
-    </>
+    <div>
+      <HomeSection />
+    </div>
   );
 }
