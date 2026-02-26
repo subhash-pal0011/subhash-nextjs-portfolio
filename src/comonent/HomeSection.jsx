@@ -35,7 +35,7 @@ const HomeSection = () => {
       title: "AI Exam Notes Generator",
       description:
         "Built an AI-powered tool that generates exam notes, supports PDF export, and includes a credit-based system with secure Razorpay payments.",
-      tech: ["Next.js", "React", "Redux", "MongoDB", "Razorpay", "Nodemailer", "OpenRouter AI"],
+      tech: ["Next.js", "React", "Redux", "MongoDB", "Tailwind CSS", "Razorpay", "Nodemailer", "OpenRouter AI"],
       live: "https://examnotes-ai-app.vercel.app",
       github: "https://github.com/subhash-pal0011/examnotes-ai-app",
       url: "/aiProject.png",
@@ -44,7 +44,7 @@ const HomeSection = () => {
       title: "Grocery App",
       description:
         "Developed a modern grocery web app featuring product browsing, cart management, and responsive UI with smooth user experience.",
-      tech: ["React", "Tailwind", "Context API", "Next.js", "Redux", "MongoDB", "Razorpay", "Nodemailer", "Twilio", "Map", "SocketIo"],
+      tech: ["React", "Tailwind css", "Context API", "Next.js", "Redux", "MongoDB", "Razorpay", "Nodemailer", "Twilio", "Map", "SocketIo"],
       live: "https://grozo-eight.vercel.app/register",
       github: "https://github.com/subhash-pal0011/GROZO",
       url: "/grozo.png",
