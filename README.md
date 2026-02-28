@@ -3,7 +3,7 @@
 A modern and responsive full-stack portfolio built with Next.js to showcase my projects, technical skills, and contact information.
 
 ##  Live Website
-https://your-vercel-link.vercel.app
+https://subhash-nextjs-portfolio.vercel.app
 
 ---
 
@@ -32,8 +32,6 @@ https://your-vercel-link.vercel.app
 ##  Installation
 
 ```bash
-git clone https://github.com/subhash-pal0011/your-repo-name
-cd your-repo-name
 npm install
 npm run dev
 ```
