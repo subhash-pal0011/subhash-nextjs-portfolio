@@ -271,11 +271,13 @@ const HomeSection = () => {
 
             {/* Buttons */}
             <div className="flex flex-wrap justify-center md:justify-start gap-4 mb-6">
-              <button className="px-5 py-2 rounded-lg bg-white text-black font-medium hover:scale-105 transition cursor-pointer">
+              <button onClick={()=>router.push("/project")}
+               className="px-5 py-2 rounded-lg bg-white text-black font-medium hover:scale-105 transition cursor-pointer">
                 View Projects
               </button>
 
-              <button className="px-5 py-2 rounded-lg border border-white/20 hover:bg-white/10 transition cursor-pointer">
+              <button onClick={()=>router.push("/contect")}
+               className="px-5 py-2 rounded-lg border border-white/20 hover:bg-white/10 transition cursor-pointer">
                 Contact Me
               </button>
             </div>
