@@ -13,8 +13,7 @@ https://subhash-nextjs-portfolio.vercel.app
 - React
 - Tailwind CSS
 - Node.js
-- Express.js
-- MongoDB
+- nodemailer
 
 ---
 
