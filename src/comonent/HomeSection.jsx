@@ -126,7 +126,7 @@ const HomeSection = () => {
             initial={{ y: -40, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.5 }}
-            onClick={() => setButton("home")}
+            onClick={() =>{ setButton("home"), router.push("/")}}
             className={`hover:text-white cursor-pointer ${button === "home" ? "text-white underline" : "text-gray-400"}`}>Home
           </motion.span>
 
@@ -134,7 +134,7 @@ const HomeSection = () => {
             initial={{ y: -40, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.7 }}
-            onClick={() => setButton("about")}
+            onClick={() =>{ setButton("about"), router.push("/about")}}
             className={`hover:text-white cursor-pointer ${button === "about" ? "text-white underline" : "text-gray-400"}`}>About
           </motion.span>
 
@@ -142,7 +142,7 @@ const HomeSection = () => {
             initial={{ y: -40, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.8 }}
-            onClick={() => setButton("project")}
+            onClick={() =>{ setButton("project") , router.push("/project")}}
             className={`hover:text-white cursor-pointer ${button === "project" ? "text-white underline" : "text-gray-400"}`}>Projects
           </motion.span>
 
@@ -150,7 +150,7 @@ const HomeSection = () => {
             initial={{ y: -40, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.9 }}
-            onClick={() => setButton("skills")}
+            onClick={() =>{ setButton("skills") , router.push("/skills")}}
             className={`hover:text-white cursor-pointer ${button === "skills" ? "text-white underline" : "text-gray-400"}`}>Skills
           </motion.span>
 
@@ -158,7 +158,7 @@ const HomeSection = () => {
             initial={{ y: -40, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 1 }}
-            onClick={() => setButton("conect")}
+            onClick={() => { setButton("conect") , router.push("/contect")}}
             className={`hover:text-white cursor-pointer ${button === "conect" ? "text-white underline" : "text-gray-400"}`}>Contact
           </motion.span>
 
@@ -213,7 +213,7 @@ const HomeSection = () => {
               initial={{ x: 40, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.8 }}
-              onClick={() => { setButton("project"); router.push("/project")}}
+              onClick={() => { setButton("project"); router.push("/project") }}
               className={`hover:text-white cursor-pointer ${button === "project" ? "text-white underline" : "text-gray-400"}`}>Projects
             </motion.span>
 
@@ -222,7 +222,7 @@ const HomeSection = () => {
               initial={{ x: 40, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.9 }}
-              onClick={() =>{ setButton("skills"); router.push("/skills")}}
+              onClick={() => { setButton("skills"); router.push("/skills") }}
               className={`hover:text-white cursor-pointer ${button === "skills" ? "text-white underline" : "text-gray-400"}`}>Skills
             </motion.span>
 
@@ -231,7 +231,7 @@ const HomeSection = () => {
               initial={{ x: 40, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 1 }}
-              onClick={() =>{ setButton("conect"); router.push("/contect")}}
+              onClick={() => { setButton("conect"); router.push("/contect") }}
               className={`hover:text-white cursor-pointer ${button === "conect" ? "text-white underline" : "text-gray-400"}`}>Contact
             </motion.span>
           </div>
@@ -468,11 +468,12 @@ const HomeSection = () => {
                   "JavaScript (ES6+)",
                   "Next.js",
                   "React",
-                  "MongoDB",
                   "Redux",
-                  "Tailwind CSS",
+                  "MongoDB",
                   "Node.js",
                   "Express.js",
+                  "Socket.io",
+                  "Tailwind CSS",
                   "OpenRouter AI",
                   "Razorpay",
                   "Nodemailer",
