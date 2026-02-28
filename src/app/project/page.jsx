@@ -17,7 +17,7 @@ const projects = [
     title: "Grocery App",
     description:
       "Developed a modern grocery web app featuring product browsing, cart management, and responsive UI with smooth user experience.",
-    tech: ["React", "Tailwind", "Context API", "Next.js", "Redux", "MongoDB", "Razorpay", "Nodemailer", "Twilio", "Map", "SocketIo"],
+    tech: ["React", "Tailwind", "Context API", "Next.js", "Redux", "MongoDB", "Razorpay", "Nodemailer", "Twilio", "Map", "SocketIo" , "Cloudinary"],
     live: "https://grozo-eight.vercel.app/register",
     github: "https://github.com/subhash-pal0011/GROZO",
     url: "/grozo.png",
@@ -35,6 +35,7 @@ const projects = [
       "Node.js",
       "Express",
       "Socket.io",
+      "Multer",
       "Cloudinary",
       "Nodemailer"
     ],
