@@ -69,12 +69,7 @@ const Page = () => {
             key={index}
             variants={itemVariants}
             whileHover={{ scale: 1.08 }}
-            className="flex items-center gap-3 
-                       bg-slate-800/70 backdrop-blur-md 
-                       px-5 py-3 rounded-xl 
-                       shadow-lg border border-white/5
-                       hover:border-white/20 
-                       transition-all duration-300"
+            className="flex items-center gap-3 bg-slate-800/70 backdrop-blur-md px-5 py-3 rounded-xl shadow-lg border border-white/5 hover:border-white/20 transition-all duration-300" 
           >
             {skill.icon}
             <span className="text-lg">{skill.name}</span>
