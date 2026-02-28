@@ -26,7 +26,7 @@ const Page = () => {
   }
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br from-[#020617] via-[#0f172a] to-[#020617] text-white">
+    <div className="min-h-screen w-full bg-linear-to-br from-[#020617] via-[#0f172a] to-[#020617] text-white">
 
       <motion.div
         variants={containerVariant}
