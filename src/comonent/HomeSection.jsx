@@ -40,15 +40,25 @@ const HomeSection = () => {
       github: "https://github.com/subhash-pal0011/examnotes-ai-app",
       url: "/aiProject.png",
     },
+    
     {
-      title: "Grocery App",
+      title: "Ann Daan",
       description:
-        "Developed a modern grocery web app featuring product browsing, cart management, and responsive UI with smooth user experience.",
-      tech: ["React", "Tailwind css", "Context API", "Next.js", "Redux", "MongoDB", "Razorpay", "Nodemailer", "Twilio", "Map", "SocketIo"],
-      live: "https://grozo-eight.vercel.app/register",
-      github: "https://github.com/subhash-pal0011/GROZO",
-      url: "/grozo.png",
-    },
+        "A real-time food donation platform that connects event organizers with NGOs to reduce food wastage. It supports role-based access, real-time updates, AI-based suggestions, and location tracking for efficient food redistribution.",
+      tech: [
+        "Next.js",
+        "MongoDB",
+        "Socket.io",
+        "Tailwind CSS",
+        "Twilio",
+        "OpenAI API",
+        "Nodemailer",
+        "Leaflet"
+      ],
+      live: "https://ann-daan-mrq8.vercel.app",
+      github: "https://github.com/subhash-pal0011/AnnDaan",
+      url: "/annDaan.png"
+    }
   ];
 
 
@@ -126,7 +136,7 @@ const HomeSection = () => {
             initial={{ y: -40, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.5 }}
-            onClick={() =>{ setButton("home"), router.push("/")}}
+            onClick={() => { setButton("home"), router.push("/") }}
             className={`hover:text-white cursor-pointer ${button === "home" ? "text-white underline" : "text-gray-400"}`}>Home
           </motion.span>
 
@@ -134,7 +144,7 @@ const HomeSection = () => {
             initial={{ y: -40, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.7 }}
-            onClick={() =>{ setButton("about"), router.push("/about")}}
+            onClick={() => { setButton("about"), router.push("/about") }}
             className={`hover:text-white cursor-pointer ${button === "about" ? "text-white underline" : "text-gray-400"}`}>About
           </motion.span>
 
@@ -142,7 +152,7 @@ const HomeSection = () => {
             initial={{ y: -40, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.8 }}
-            onClick={() =>{ setButton("project") , router.push("/project")}}
+            onClick={() => { setButton("project"), router.push("/project") }}
             className={`hover:text-white cursor-pointer ${button === "project" ? "text-white underline" : "text-gray-400"}`}>Projects
           </motion.span>
 
@@ -150,7 +160,7 @@ const HomeSection = () => {
             initial={{ y: -40, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.9 }}
-            onClick={() =>{ setButton("skills") , router.push("/skills")}}
+            onClick={() => { setButton("skills"), router.push("/skills") }}
             className={`hover:text-white cursor-pointer ${button === "skills" ? "text-white underline" : "text-gray-400"}`}>Skills
           </motion.span>
 
@@ -158,7 +168,7 @@ const HomeSection = () => {
             initial={{ y: -40, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 1 }}
-            onClick={() => { setButton("conect") , router.push("/contect")}}
+            onClick={() => { setButton("conect"), router.push("/contect") }}
             className={`hover:text-white cursor-pointer ${button === "conect" ? "text-white underline" : "text-gray-400"}`}>Contact
           </motion.span>
 
@@ -271,13 +281,13 @@ const HomeSection = () => {
 
             {/* Buttons */}
             <div className="flex flex-wrap justify-center md:justify-start gap-4 mb-6">
-              <button onClick={()=>router.push("/project")}
-               className="px-5 py-2 rounded-lg bg-white text-black font-medium hover:scale-105 transition cursor-pointer">
+              <button onClick={() => router.push("/project")}
+                className="px-5 py-2 rounded-lg bg-white text-black font-medium hover:scale-105 transition cursor-pointer">
                 View Projects
               </button>
 
-              <button onClick={()=>router.push("/contect")}
-               className="px-5 py-2 rounded-lg border border-white/20 hover:bg-white/10 transition cursor-pointer">
+              <button onClick={() => router.push("/contect")}
+                className="px-5 py-2 rounded-lg border border-white/20 hover:bg-white/10 transition cursor-pointer">
                 Contact Me
               </button>
             </div>
