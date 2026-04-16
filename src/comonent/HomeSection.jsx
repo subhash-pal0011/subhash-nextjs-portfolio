@@ -50,7 +50,7 @@ const HomeSection = () => {
 
       live: "https://ann-daan-mrq8.vercel.app",
       github: "https://github.com/subhash-pal0011/AnnDaan",
-      url: "/annDaan.png"
+      url: "/annDann.png"
     }
   ];
 
