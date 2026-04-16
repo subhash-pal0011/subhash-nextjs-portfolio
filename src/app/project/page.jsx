@@ -14,10 +14,28 @@ const projects = [
     url: "/aiProject.png",
   },
   {
+    title: "Ann Daan",
+    description:
+      "A real-time food donation platform that connects event organizers with NGOs to reduce food wastage. It supports role-based access, real-time updates, AI-based suggestions, and location tracking for efficient food redistribution.",
+    tech: [
+      "Next.js",
+      "MongoDB",
+      "Socket.io",
+      "Tailwind CSS",
+      "Twilio",
+      "OpenAI API",
+      "Nodemailer",
+      "Leaflet"
+    ],
+    live: "https://ann-daan-mrq8.vercel.app",
+    github: "https://github.com/subhash-pal0011/AnnDaan",
+    url: "/annDann.png"
+  },
+  {
     title: "Grocery App",
     description:
       "Developed a modern grocery web app featuring product browsing, cart management, and responsive UI with smooth user experience.",
-    tech: ["React", "Tailwind", "Context API", "Next.js", "Redux", "MongoDB", "Razorpay", "Nodemailer", "Twilio", "Map", "SocketIo" , "Cloudinary"],
+    tech: ["React", "Tailwind", "Context API", "Next.js", "Redux", "MongoDB", "Razorpay", "Nodemailer", "Twilio", "Map", "SocketIo", "Cloudinary"],
     live: "https://grozo-eight.vercel.app/register",
     github: "https://github.com/subhash-pal0011/GROZO",
     url: "/grozo.png",
