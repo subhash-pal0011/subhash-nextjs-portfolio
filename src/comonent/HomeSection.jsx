@@ -40,21 +40,14 @@ const HomeSection = () => {
       github: "https://github.com/subhash-pal0011/examnotes-ai-app",
       url: "/aiProject.png",
     },
-    
+
     {
       title: "Ann Daan",
       description:
         "A real-time food donation platform that connects event organizers with NGOs to reduce food wastage. It supports role-based access, real-time updates, AI-based suggestions, and location tracking for efficient food redistribution.",
-      tech: [
-        "Next.js",
-        "MongoDB",
-        "Socket.io",
-        "Tailwind CSS",
-        "Twilio",
-        "OpenAI API",
-        "Nodemailer",
-        "Leaflet"
-      ],
+
+      tech: ["Next.js", "MongoDB", "Socket.io", "Tailwind CSS", "Twilio", "OpenAI API", "Nodemailer", "Leaflet"],
+
       live: "https://ann-daan-mrq8.vercel.app",
       github: "https://github.com/subhash-pal0011/AnnDaan",
       url: "/annDaan.png"
