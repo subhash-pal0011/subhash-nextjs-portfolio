@@ -283,6 +283,24 @@ const HomeSection = () => {
                 className="px-5 py-2 rounded-lg border border-white/20 hover:bg-white/10 transition cursor-pointer">
                 Contact Me
               </button>
+
+              <div className="relative group inline-block">
+                <a href="/Subash.pdf" download>
+                  <img
+                    src="/job_cv.gif"
+                    className="h-10 cursor-pointer"
+                  />
+                </a>
+
+                <span
+                  className="absolute -top-10 left-1/2 -translate-x-1/2
+                  whitespace-nowrap rounded-md bg-green-400 px-3 py-1
+                  text-sm text-white opacity-0 transition-opacity
+                  duration-300 group-hover:opacity-100"
+                >
+                  Download Resume
+                </span>
+              </div>
             </div>
 
 
