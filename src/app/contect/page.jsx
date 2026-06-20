@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { MdOutlineEmail } from "react-icons/md"
 import { CiLinkedin } from "react-icons/ci"
 import { IoLogoGithub } from "react-icons/io5"
-import Contact from "@/comonent/Contect"
+import Contact from "@/component/Contact"
 
 const Page = () => {
 

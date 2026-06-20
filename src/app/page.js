@@ -1,4 +1,5 @@
-import HomeSection from "@/comonent/HomeSection";
+import HomeSection from "@/component/HomeSection";
+
 
 export default function Home() {
   return (

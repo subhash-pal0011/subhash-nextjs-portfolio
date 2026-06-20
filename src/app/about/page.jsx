@@ -4,7 +4,7 @@ import React from "react";
 import { RiLinkedinLine } from "react-icons/ri";
 import { IoLogoGithub } from "react-icons/io";
 import { AiOutlineMail } from "react-icons/ai";
-import Contect from "@/comonent/Contect";
+import Contact from "@/component/Contact";
 
 const projects = [
   {
@@ -174,7 +174,10 @@ const Page = () => {
         transition={{ duration: 0.6 }}
         viewport={{ once: false }}
       >
-        <Contect />
+
+
+
+        <Contact />
       </motion.section>
 
     </div>
