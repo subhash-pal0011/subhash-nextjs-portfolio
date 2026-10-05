@@ -25,7 +25,7 @@ const HomeSection = () => {
   const [sideBar, setSideBar] = useState(false)
   const stats = [
     { icon: <GrProjects />, value: "10+", label: "Skills" },
-    { icon: <MdOutlineWorkOutline />, value: "Fresher", label: "Experience Level" },
+    { icon: <MdOutlineWorkOutline />, value: "6 Months", label: "Internship Experience" },
     { icon: <RiStackLine />, value: "MERN", label: "Full-Stack Stack" },
     { icon: <FiAward />, value: "Next.js + AI", label: "Specialization" },
   ];
@@ -338,28 +338,40 @@ const HomeSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: false }}
-          className="max-w-4xl mx-auto flex flex-wrap md:flex-nowrap justify-between gap-4 border border-white/10 rounded p-3 backdrop-blur-md"
+          className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
         >
           {stats.map((item, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.15 }}
-              className="flex items-center gap-3 flex-1 border border-white/10 rounded-l px-4 py-2 hover:bg-white/10 transition cursor-pointer"
+              transition={{ delay: index * 0.15, duration: 0.5 }}
+              whileHover={{ y: -5, scale: 1.02 }}
+              className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/4 backdrop-blur-xl px-5 py-5 transition-all duration-300 hover:border-cyan-400/40 hover:bg-white/8 hover:shadow-[0_10px_40px_rgba(34,211,238,0.12)]"
             >
-              <div className="text-xl text-white">
-                {item.icon}
+              {/* Background Glow */}
+              <div className="absolute -top-10 -right-10 h-24 w-24 rounded-full bg-cyan-400/10 blur-2xl transition-all duration-300 group-hover:bg-cyan-400/20" />
+
+              <div className="relative flex items-center gap-4">
+                {/* Icon */}
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-xl text-cyan-300 transition-all duration-300 group-hover:border-cyan-400/40 group-hover:bg-cyan-400/20 group-hover:text-cyan-200">
+                  {item.icon}
+                </div>
+
+                {/* Content */}
+                <div className="min-w-0">
+                  <h3 className="text-lg font-bold text-white">
+                    {item.value}
+                  </h3>
+
+                  <span className="text-xs font-medium uppercase tracking-wider text-gray-400">
+                    {item.label}
+                  </span>
+                </div>
               </div>
 
-              <div>
-                <h3 className="text-white font-semibold">
-                  {item.value}
-                </h3>
-                <span className="text-gray-400 text-sm">
-                  {item.label}
-                </span>
-              </div>
+              {/* Bottom Highlight */}
+              <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-linear-to-r from-cyan-400 to-blue-500 transition-all duration-500 group-hover:w-full" />
             </motion.div>
           ))}
         </motion.div>
