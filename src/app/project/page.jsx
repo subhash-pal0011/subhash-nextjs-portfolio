@@ -32,6 +32,27 @@ const projects = [
     url: "/annDann.png"
   },
   {
+    title: "ShopMind — Multi-Vendor E-Commerce Platform",
+    description:
+      "Built a full-stack multi-vendor e-commerce platform with customer, vendor, and admin roles, featuring real-time order updates, Stripe payments, inventory management, order tracking, reviews, and secure authentication.",
+    tech: [
+      "Next.js",
+      "React",
+      "Node.js",
+      "MongoDB",
+      "NextAuth.js",
+      "Socket.IO",
+      "Stripe",
+      "Cloudinary",
+      "Nodemailer",
+      "Leaflet",
+      "Tailwind CSS"
+    ],
+    live: "https://shopminds.vercel.app",
+    github: "https://github.com/subhash-pal0011/shopmind",
+    url: "/shopminds.png",
+  },
+  {
     title: "Grocery App",
     description:
       "Developed a modern grocery web app featuring product browsing, cart management, and responsive UI with smooth user experience.",
