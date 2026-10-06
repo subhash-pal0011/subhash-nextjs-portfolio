@@ -285,7 +285,7 @@ const HomeSection = () => {
               </button>
 
               <div className="relative group inline-block">
-                <a href="/Subhash_resume.pdf" download>
+                <a href="/subhashResume.pdf" download>
                   <img
                     src="/job_cv.gif"
                     className="h-10 cursor-pointer"
